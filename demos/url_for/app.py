@@ -1,18 +1,13 @@
-from flask import Flask, url_for
+from flask import Flask
 
 app = Flask(__name__)
 
 @app.route('/')
-def home():
-    return 'Home Page'
-
-@app.route('/about')
-def about():
-    return 'About Page'
-
-@app.route('/test')
-def test():
-    return f'URL for home page is {url_for("home")}'
+def index():
+    return "Hello"
+@app.route('/login')
+def login():
+    return "请登录！"
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -11,5 +11,3 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 class Note(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     body = db.Column(db.Text)
-
-#TODO here
